@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício</title>
+    <title>Supeer Contador</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -11,17 +11,13 @@
       <h1>Vamos contar</h1>
     </header>
     <section>
-      <div>
-        Início: <input type="number" name="txtvel" id="txtvel">
+      <div id="dados">
+        <p>Início: <input type="number" name="inicio" id="txti"></p>
+        <p>Fim: <input type="number" name="fim" id="txtf"></p>
+        <p>Passo: <input type="number" name="passo" id="txtp"></p>
+        <p><input type="button" value="Contar" onclick="contar()"></p>
       </div>
-      <div>
-        Fim: <input type="number" name="txtvel" id="txtvel">
-      </div>
-      <div>
-        Passo: <input type="number" name="txtvel" id="txtvel">
-        <div>
-          <button id="verificarBtn">contar</button>
-        </div>
+      <div id="res">
         Preparando a contagem...
       </div>
     </section>
